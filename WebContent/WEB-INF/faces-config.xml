@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<faces-config
-    xmlns="http://java.sun.com/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
-    version="2.0">
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+	version="2.0">
 
-<navigation-rule>
-<from-view-id>page1</from-view-id>
-<navigation-case>
-<from-outcome>step2</from-outcome>
-<to-view-id>step2</to-view-id>
-</navigation-case>
-</navigation-rule>
+	<application>
+		<navigation-handler>it.cosenonjaviste.hellorichfaces4.MyNavigationHandler</navigation-handler>
+	</application>
 
-<navigation-rule>
-<from-view-id>page2</from-view-id>
-<navigation-case>
-<from-outcome>step2</from-outcome>
-<to-view-id>step2</to-view-id>
-</navigation-case>
-</navigation-rule>
+	<navigation-rule>
+		<from-view-id>page1</from-view-id>
+		<navigation-case>
+			<from-outcome>step2</from-outcome>
+			<to-view-id>step2</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>page2</from-view-id>
+		<navigation-case>
+			<from-outcome>step2</from-outcome>
+			<to-view-id>step2</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 
 </faces-config>
